@@ -7,8 +7,16 @@ name = "creational"
 version = "0.1.0"
 
 [[package]]
+name = "ehavioral"
+version = "0.1.0"
+
+[[package]]
 name = "rust-design-pattern"
 version = "0.1.0"
 dependencies = [
  "creational",
 ]
+
+[[package]]
+name = "structural"
+version = "0.1.0"
