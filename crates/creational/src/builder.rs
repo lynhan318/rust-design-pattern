@@ -1,5 +1,34 @@
+// #Intend
+// Seperate the construction of a complex from its representation so that
+// the same construction process can create different representations.
+
+// #Problem
 // Complex Query builder for Postgresql
 // Context: a query with different select, limit,order by...
+
+//                                             ┌───────────────────
+//                                             │ QueryBuilder(table:string)
+//                                             │                  │
+//                                             └────────▲─────────┘
+//                                                      │
+//                                                      │
+//                                                      │
+//                                                      │
+//                            ┌───────────────────────┬─┴────────────────────────────┐
+//                            │                       │                              │
+//         ┌──────────────────┴───┐     ┌─────────────┴────────────┐      ┌──────────┴─────────────────┐
+//         │UserQueryBuilder      │     │   PostQueryBuilder       │      │   TagQueryBuilder          │
+//         │                      │     │                          │      │                            │
+//         │#QueryBuilder("user") │     │  #QueryBuilder("posts")  │      │   #QueryBuilder("tags")    │
+//         │                      │     │                          │      │                            │
+//         └───────┬──────────────┘     └────────────┬─────────────┘      │                            │
+//                 │                                 │                    └───────────────┬────────────┘
+//                 │                                 │                                    │
+//                 │                                 │                                    │
+//                 │                                 │                                    │
+//                 ▼                                 ▼                                    ▼
+
+//        select * from users...              select * from posts                   select * from tags....
 
 pub struct QueryBuilder<'a> {
     table: &'a str,

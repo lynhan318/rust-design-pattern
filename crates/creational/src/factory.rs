@@ -1,3 +1,7 @@
+// #Intend
+// Provide an interface for creating families of related or dependent objects
+// without specifying their concreate classes.
+
 // #Problem:
 // create a windows with multiples widget, have different look and feel by
 // scrollbar and windows.
