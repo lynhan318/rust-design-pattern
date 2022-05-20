@@ -133,6 +133,10 @@ mod abstract_factory {
         }
     }
 }
+// Factory Method pattern
+// Intent:
+// Define an interface for creating an object, but let subclasses decide which class to instantiate.
+// Facfoty method lets a class defer instantiation to subclasses.
 
 mod factory_method {
     use super::*;
