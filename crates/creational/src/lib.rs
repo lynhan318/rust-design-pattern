@@ -1,5 +1,6 @@
 pub mod builder;
 pub mod factory;
+mod prototype;
 
 #[cfg(test)]
 mod tests {
