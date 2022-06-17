@@ -2,6 +2,8 @@ pub mod builder;
 pub mod factory;
 mod prototype;
 
+fn main() {}
+
 #[cfg(test)]
 mod tests {
     #[test]

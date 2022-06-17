@@ -1,4 +1,5 @@
 pub mod adapter;
+pub mod bridge;
 #[cfg(test)]
 mod tests {
     #[test]
