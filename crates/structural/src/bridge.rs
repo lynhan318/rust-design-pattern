@@ -37,10 +37,12 @@
 //                                                                                │                      │           │                    │
 //                                                                                └──────────────────────┘           └────────────────────┘
 
-// Example: image that you're building an application that read/write document,
-// your app supports multi platform Window/MacOs/Linux and each os will have
-// different mecharisem to store file, so we will extract all method read/write in
-// an abstraction, and each os will be implementor of FileSystem interface.
+// Example:
+// imaging that you're building an application that reads/writes the document,
+//  your app supports multi-platform Windows/macOS/Linux.
+//  Each OS will have a different mechanism to store files
+//  so that we will extract all methods read/write in abstraction,
+//  and each os will be the implementor of the FileSystem interface.
 
 type Paths = Vec<String>;
 
