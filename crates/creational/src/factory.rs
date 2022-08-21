@@ -69,7 +69,7 @@ pub enum Themes {
     Motif,
 }
 
-mod abstract_factory {
+pub mod abstract_factory {
     use super::*;
     pub trait WidgetFactory {
         fn create_window(&self) -> Window;
@@ -138,7 +138,7 @@ mod abstract_factory {
 // Define an interface for creating an object, but let subclasses decide which class to instantiate.
 // Facfoty method lets a class defer instantiation to subclasses.
 
-mod factory_method {
+pub mod factory_method {
     use super::*;
     trait WidgetFactoryMethod {
         type Object;

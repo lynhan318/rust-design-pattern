@@ -34,6 +34,7 @@
 // rather than instantiating the class manually, each time with the appropriate state.
 // Implementation
 
+#[derive(Debug)]
 struct Pen {
     pub color: String,
     pub width: i64,
@@ -53,7 +54,7 @@ impl PenPrototype for Pen {
         }
     }
 
-    fn set_width(&self, width: number) -> Pen {
+    fn set_width(&self, width: i64) -> Pen {
         Pen {
             width,
             color: self.color.clone(),
@@ -74,7 +75,7 @@ struct Circle {
 }
 
 struct Rectangle {
-    pub witdh: i64,
+    pub width: i64,
     pub height: i64,
 }
 
@@ -104,7 +105,7 @@ fn demo_prototype() {
 
     //draw rectangle
     Rectangle {
-        witdh: 1,
+        width: 1,
         height: 2,
     }
     .draw(pen.set_width(3));

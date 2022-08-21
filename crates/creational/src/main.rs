@@ -1,7 +1,7 @@
 use creational::{builder, factory};
 
 fn demo_factory() {
-    let client = factory::get_widget_factory(factory::Themes::Motif);
+    let client = factory::abstract_factory::get_widget_factory(factory::Themes::Motif);
     let window = client.create_window();
     let scroll = client.create_scroll_bar();
     let info = client.get_theme_info();
@@ -10,7 +10,7 @@ fn demo_factory() {
     println!("Client::ThemeInfo {:?}", info);
 
     println!("----------------------");
-    let client = factory::get_widget_factory(factory::Themes::PMWindow);
+    let client = factory::abstract_factory::get_widget_factory(factory::Themes::PMWindow);
     let window = client.create_window();
     let scroll = client.create_scroll_bar();
     println!("Client::Window {:?}", window);
