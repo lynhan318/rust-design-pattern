@@ -1,6 +1,9 @@
-use structural::{adapter, bridge};
+use structural::{adapter, bridge, composite};
 
 fn main() {
     bridge::demo_bridge();
-    println!("This is adapter implementation")
+
+    println!("=====================================");
+
+    composite::create_desktop();
 }
