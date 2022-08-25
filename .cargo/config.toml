@@ -1,4 +1,5 @@
 [build]
+rustc-wrapper = '/Users/kevin/.cargo/bin/sccache'
 [target.x86_64-unknown-linux-gnu]
 rustflags = [
     '-Clink-arg=-fuse-ld=lld',
@@ -13,6 +14,7 @@ linker = 'rust-lld.exe'
 [target.x86_64-apple-darwin]
 rustflags = [
     '-C',
+    'link-arg=-fuse-ld=/usr/local/bin/zld',
     '-Zshare-generics=y',
     '-Csplit-debuginfo=unpacked',
 ]

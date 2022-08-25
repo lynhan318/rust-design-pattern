@@ -1,6 +1,7 @@
 pub mod adapter;
 pub mod bridge;
 pub mod composite;
+pub mod decorator;
 #[cfg(test)]
 mod tests {
     #[test]
