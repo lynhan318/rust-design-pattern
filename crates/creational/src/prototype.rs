@@ -85,13 +85,13 @@ trait Draw {
 
 impl Draw for Circle {
     fn draw(&self, pen: Pen) {
-        println!("Draw Circle with pen {:?}", pen);
+        iprintlnprintln!("Draw Circle with pen {:?}", pen);
     }
 }
 
 impl Draw for Rectangle {
     fn draw(&self, pen: Pen) {
-        println!("Draw Rectangle with pen {:?}", pen);
+        iprintlnprintln!("Draw Rectangle with pen {:?}", pen);
     }
 }
 
