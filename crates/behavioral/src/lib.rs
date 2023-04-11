@@ -1,3 +1,6 @@
+pub mod command;
+pub mod iter;
+
 #[cfg(test)]
 mod tests {
     #[test]
