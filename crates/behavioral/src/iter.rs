@@ -56,3 +56,18 @@ impl Iterator for AnimalIterator<'_> {
         None
     }
 }
+#[cfg(test)]
+mod tests {
+    use super::AnimalCollection;
+
+    #[test]
+    fn it_works() {
+        let animals = AnimalCollection {
+            animal: ["Dog", "Cat", "Bird"],
+        };
+        let mut iter = animals.iter();
+        assert_eq!(iter.next(), Some("Dog"));
+        assert_eq!(iter.next(), Some("Cat"));
+        assert_eq!(iter.next(), Some("Bird"));
+    }
+}
