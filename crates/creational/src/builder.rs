@@ -38,7 +38,7 @@ pub struct QueryBuilder<'a> {
     order_by: Option<&'a str>,
 }
 impl<'a> QueryBuilder<'a> {
-    pub fn new(table: &'a str) -> Self {
+    pub fn new(tale: &'a str) -> Self {
         Self {
             table,
             select: None,
@@ -82,3 +82,4 @@ impl<'a> QueryBuilder<'a> {
         query_str
     }
 }
+

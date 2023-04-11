@@ -1,5 +1,0 @@
-rd_enabled = true
-fleet_id = "da9f1ffc-c31a-4b45-bc33-402d4e2bea08"
-
-[build]
-sccache = "/Users/kevin/.cargo/bin/sccache"
