@@ -1,5 +1,6 @@
 pub mod command;
 pub mod iter;
+pub mod mediator;
 
 #[cfg(test)]
 mod tests {
