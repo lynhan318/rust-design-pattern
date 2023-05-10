@@ -1,5 +1,6 @@
 pub mod command;
 pub mod iter;
+pub mod strategy;
 
 #[cfg(test)]
 mod tests {

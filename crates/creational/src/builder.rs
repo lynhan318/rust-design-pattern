@@ -82,4 +82,3 @@ impl<'a> QueryBuilder<'a> {
         query_str
     }
 }
-
