@@ -1,6 +1,7 @@
 pub mod command;
 pub mod iter;
 pub mod strategy;
+pub mod mediator;
 
 #[cfg(test)]
 mod tests {

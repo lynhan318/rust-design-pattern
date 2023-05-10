@@ -3,6 +3,7 @@ use crate::strategy::{Bicyle, MotorBike};
 mod command;
 mod iter;
 mod strategy;
+mod mediator;
 
 pub fn main() {
     let moving = strategy::Move::new("HCM", "Dallas");
